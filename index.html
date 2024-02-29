@@ -1,20 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>Page Title</title>
+<title>intro</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="style.css">
 <style>
+
+body {
+	font-family: Arial;
+	margin: 0;
+	text-align: center;
+	background-color: #6262D9;
+}
+
 </style>
-<script src=""></script>
 
+<!-- Asuka taken from twitter --> 
+<!-- fish taken from twitter --> 
+<!-- horse taken from twitter --> 
+<script>
+	var imageArray = [
+            "intro.jpg",
+            "intro2.jpg",
+            "intro3.jpg",
+        ];
 
-	<!--- Code above this line will not be displayed on the browser --> 
+        
+        function getRandomImage() {
+            var randomIndex = Math.floor(Math.random() * imageArray.length);
+            return imageArray[randomIndex];
+        }
+
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            var imgElement = document.querySelector('img');
+            imgElement.src = getRandomImage();
+        });
+</script>
 
 	<body>
-
-		<p> Hello world! </p>
-		<p> My name is Geneu Kimm </p>
+	<div>
+		<nav>
+			<h1> Welcome to my Website</h1>
+			<ul>
+				<li><a href = "aboutme/aboutme.html"> About Me </a></li>
+				<li><a href = "family/family.html"> Family </a></li>
+				<li><a href = "artwork/artwork.html">Artwork </a></li>
+				<li><a href = "genshin-hsr/genshin-hsr.html">Genshin/HSR </a></li>
+			</ul>
+		</nav>
+	
+	</div>
+		<h2>
+			This is an introduction to my page
+		</h2>
+	<img src="" alt="Random Image" width="575" height="575">
+		
 
 	</body>
 
